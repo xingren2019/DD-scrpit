@@ -18,11 +18,11 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync ZhiYi-N-script
+      - name: sync DD-D1-XIAOPU
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
           source_repo: "https://github.com/DD-D1/XIAOPU.git"
-          source_branch: "master"
+          source_branch: "main"
           destination_branch: "master"
           github_token: ${{ secrets.PAT }}
